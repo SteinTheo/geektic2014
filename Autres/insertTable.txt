@@ -7,13 +7,13 @@ insert into geek values (5, 'DUPOND', 'Jacques', 'xX-noscope-Xx@hotmail.fr', 'H'
 
 
 -- centre_interet
-insert into centre_interet values (1, 'C++', 'Développement');
-insert into centre_interet values (2, 'Java', 'Développement');
-insert into centre_interet values (3, 'Basketball', 'Sport');
-insert into centre_interet values (4, 'Football', 'Sport');
-insert into centre_interet values (5, 'Badminton', 'Sport');
-insert into centre_interet values (6, 'Jeux-vidéo', 'Loisir');
-insert into centre_interet values (7, 'Sudoku', 'Loisir');
+insert into interet values (1, 'C++', 'Développement');
+insert into interet values (2, 'Java', 'Développement');
+insert into interet values (3, 'Basketball', 'Sport');
+insert into interet values (4, 'Football', 'Sport');
+insert into interet values (5, 'Badminton', 'Sport');
+insert into interet values (6, 'Jeux-vidéo', 'Loisir');
+insert into interet values (7, 'Sudoku', 'Loisir');
 
 -- interet_geek
 insert into interet_geek values (1, 1);

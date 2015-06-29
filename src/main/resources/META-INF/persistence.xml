@@ -4,9 +4,12 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="GEEKTIC" transaction-type="RESOURCE_LOCAL">
-
+		<class>entity.Geek</class>
+		<class>entity.Interet</class>
+		
 		<properties>
 			<property name="hibernate.show_sql" value="true"/>
 		</properties>
 	</persistence-unit>
+	
 </persistence>
