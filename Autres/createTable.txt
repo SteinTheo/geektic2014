@@ -1,0 +1,5 @@
+create table geek (id int, nom varchar(50), prenom varchar(50), mail varchar(100), sexe char(1), avatar varchar(255));
+
+create table centre_interet (id int, nom varchar(100), type varchar(50));
+
+create table interet_geek (id_geek int, id_interet int);

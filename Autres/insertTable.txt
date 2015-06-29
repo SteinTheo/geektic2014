@@ -1,0 +1,33 @@
+-- geek
+insert into geek values (1, 'DUPONT', 'Jean', 'jean.dupont@gmail.com', 'H', '' );
+insert into geek values (2, 'DURAND', 'Micheline', 'michelinedu86@hotmail.fr', 'F', '' );
+insert into geek values (3, 'TOTO', 'Paul', 'toto@wanadoo.fr', 'H', '' );
+insert into geek values (4, 'TATA', 'Isabelle', 'tata@gmail.com', 'F', '' );
+insert into geek values (5, 'DUPOND', 'Jacques', 'xX-noscope-Xx@hotmail.fr', 'H', '' );
+
+
+-- centre_interet
+insert into centre_interet values (1, 'C++', 'Développement');
+insert into centre_interet values (2, 'Java', 'Développement');
+insert into centre_interet values (3, 'Basketball', 'Sport');
+insert into centre_interet values (4, 'Football', 'Sport');
+insert into centre_interet values (5, 'Badminton', 'Sport');
+insert into centre_interet values (6, 'Jeux-vidéo', 'Loisir');
+insert into centre_interet values (7, 'Sudoku', 'Loisir');
+
+-- interet_geek
+insert into interet_geek values (1, 1);
+insert into interet_geek values (1, 2);
+insert into interet_geek values (1, 6);
+insert into interet_geek values (2, 3);
+insert into interet_geek values (2, 6);
+insert into interet_geek values (2, 7);
+insert into interet_geek values (3, 1);
+insert into interet_geek values (3, 7);
+insert into interet_geek values (4, 2);
+insert into interet_geek values (4, 3);
+insert into interet_geek values (5, 2);
+insert into interet_geek values (5, 5);
+insert into interet_geek values (5, 6);
+
+commit;

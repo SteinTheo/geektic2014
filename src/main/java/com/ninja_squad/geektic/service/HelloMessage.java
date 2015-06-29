@@ -8,4 +8,8 @@ public class HelloMessage {
     public String getMessage() {
         return "Hello, Geek!";
     }
+    
+    public String getTest() {
+        return "Hello, Geek 22!";
+    }
 }
