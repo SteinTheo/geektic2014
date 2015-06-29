@@ -16,4 +16,8 @@ public class GeekCtrl {
 		
 		return geeks;
 	}
+	
+	public String getMessage(){
+		return "Ceci est un test sur GeekCtrl";
+	}
 }

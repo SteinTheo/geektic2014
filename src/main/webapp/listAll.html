@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Voici la liste de tous les geeks :</title>
+</head>
+<body>
+
+<section id="main">
+  <div>
+   <h1 id="title">Les geeks inscrits sur le site :</h1>
+   <div ng-controller="GeekCtrl">
+   		<h2>{{ GeekCtrl.getGeeks }}</h2>
+   </div> 
+        <ul id="list">
+        </ul>
+  </div>
+</section>
+
+
+</body>
+</html>

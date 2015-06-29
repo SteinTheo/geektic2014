@@ -5,7 +5,11 @@
         <title>Geektic</title>
     </head>
     <body ng-controller="HelloCtrl">
-        <h1>{{ helloMessage.message }}</h1>
+        <h1>{{ helloMessage.message }}</h1>  
+        <a href="localhost:8080/#/listAll">Liste de tous les geeks</a>
+        
+        <div ng-view></div>
+        
         <script src="/js/angular.js"></script>
         <script src="/js/angular-route.js"></script>
         <script src="/js/app.js"></script>
