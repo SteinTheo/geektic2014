@@ -1,3 +1,4 @@
+@set GRADLE_USER_HOME=W:\TP_JEE_STEIN\geektic2014
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
