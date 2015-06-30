@@ -19,6 +19,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import com.ninja_squad.geektic.dao.GeekDao;
+
 /**
  * Spring application configuration. Lacks some annotations.
  * @author JB Nizet
@@ -71,4 +73,9 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public OpenEntityManagerInViewInterceptor openEntityManagerInViewInterceptor() {
     	return new OpenEntityManagerInViewInterceptor();
     }
+	
+	@Bean
+	public GeekDao geekDao(){
+		return new GeekDao();
+	}
 }

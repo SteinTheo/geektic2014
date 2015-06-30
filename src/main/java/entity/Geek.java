@@ -20,9 +20,21 @@ public class Geek {
 		return id;
 	}
 	
+	@Id
+	@Column(name = "ID_GEEK")
+	@GeneratedValue
+	public void setId(int id2){
+		id = id2;
+	}
+	
 	@Column(name = "NOM")
 	public String getNom(){
 		return nom;
+	};
+	
+	@Column(name = "NOM")
+	public void setNom(String nom){
+		this.nom=nom;
 	};
 	
 	@Column(name = "PRENOM")
@@ -30,19 +42,39 @@ public class Geek {
 		return prenom;
 	}
 	
+	@Column(name = "PRENOM")
+	public void setPrenom(String prenom){
+		this.prenom=prenom;
+	};
+	
 	@Column(name = "MAIL")
 	public String getMail(){
 		return mail;
 	}
+	
+	@Column(name = "MAIL")
+	public void setMail(String mail){
+		this.mail=mail;
+	};
 	
 	@Column(name = "SEXE")
 	public char getSexe(){
 		return sexe;
 	}
 	
+	@Column(name = "SEXE")
+	public void setSexe(char sexe){
+		this.sexe = sexe;
+	}
+	
 	@Column(name = "AVATAR")
 	public String getAvatar(){
 		return avatar;
+	}
+	
+	@Column(name = "AVATAR")
+	public void setAvatar(String avatar){
+		this.avatar = avatar;
 	}
 	
 	@ManyToMany

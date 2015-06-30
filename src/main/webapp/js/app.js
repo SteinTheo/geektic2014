@@ -25,6 +25,6 @@ app.config(function($routeProvider){
 
 app.controller('GeekCtrl', function($scope, $http) {
 	$http.get('/api/geek').success(function(getGeeks) {
-        $scope.GeekService = getGeeks;
+        $scope.getGeeks = getGeeks;
     });
 });

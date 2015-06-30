@@ -1,19 +1,25 @@
-package control;
+package com.ninja_squad.geektic.control;
 
 import java.util.List;
 
-import model.GeekDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.ninja_squad.geektic.dao.GeekDao;
+
 import entity.Geek;
 
+@Controller
 public class GeekCtrl {
-	private GeekDao gDao = new GeekDao();
+	
+	@Autowired
+	private GeekDao gDao;
 	private List<Geek> geeks;
 	
 	public List<Geek> getGeeks(){
 		if(geeks==null){
 			geeks = gDao.selectAll();
 		}
-		
 		return geeks;
 	}
 	

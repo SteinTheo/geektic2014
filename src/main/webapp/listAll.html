@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Voici la liste de tous les geeks :</title>
-</head>
-<body>
+<html ng-app="geektic">
 
+<head>
+	<title>Voici la liste de tous les geeks :</title>
+</head>
+
+<body>
 <section id="main">
   <div>
-   <h1 id="title">Les geeks inscrits sur le site :</h1>
-   <div ng-controller="GeekCtrl">
-   		<h2>{{ GeekCtrl.getGeeks }}</h2>
-   </div> 
-        <ul id="list">
-        </ul>
+	   <h1 id="title">Les geeks inscrits sur le site :</h1>
+	   <TR> 
+		 <TH></TH> 
+		 <TH>Nom</TH> 
+	 	 <TH>Prenom</TH> 
+	 	 <TH>Sexe</TH> 
+	  </TR> 
+	  <div ng-controller="GeekCtrl">
+	   <tr ng-repeat="geek in getGeeks" value={{geek.ID_GEEK}}>
+	   	<td>{{geek.NOM}}</td>
+	   	<td>{{geek.PRENOM}}</td>
+	   	<td>{{geek.SEXE}}</td>
+	   </tr> 
+	  </div>
   </div>
 </section>
-
 
 </body>
 </html>
