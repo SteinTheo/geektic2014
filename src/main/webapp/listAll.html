@@ -3,25 +3,27 @@
 
 <head>
 	<title>Voici la liste de tous les geeks :</title>
+	<meta charset="utf-8">
 </head>
 
 <body>
 <section id="main">
   <div>
 	   <h1 id="title">Les geeks inscrits sur le site :</h1>
-	   <TR> 
-		 <TH></TH> 
-		 <TH>Nom</TH> 
-	 	 <TH>Prenom</TH> 
-	 	 <TH>Sexe</TH> 
-	  </TR> 
-	  <div ng-controller="GeekCtrl">
-	   <tr ng-repeat="geek in getGeeks" value={{geek.ID_GEEK}}>
-	   	<td>{{geek.NOM}}</td>
-	   	<td>{{geek.PRENOM}}</td>
-	   	<td>{{geek.SEXE}}</td>
-	   </tr> 
-	  </div>
+	   <table>
+		   <TR> 
+			 <TH>Nom</TH> 
+		 	 <TH>Prenom</TH> 
+		 	 <TH>Sexe</TH> 
+		  </TR> 
+		  <div ng-controller="GeekCtrl">
+		   <tr ng-repeat="(geek, ID_GEEK) in getGeeks">
+		   	<th>{{geek.NOM}}</th>
+		   	<th>{{geek.PRENOM}}</th>
+		   	<th>{{geek.SEXE}}</th>
+		   </tr> 
+		  </div>
+	  </table>
   </div>
 </section>
 
